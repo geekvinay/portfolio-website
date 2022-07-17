@@ -5,8 +5,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Document</title>
   </head>
-  <body class="bg-slate-200">
+  <body class="w-[100vw] min-h-[100vh] bg-slate-200 flex flex-col justify-start">
     {{>header}}
-    {{>footer}}
+
+    <div class=" px-[50px]">
+      <h1 class="text-2xl font-sans font-semibold pt-5">Error fetching the requested page</h1>
+      <p class="pt-5">The page you're requesting is not on the code</p>
+    </div>
+    <section class="mt-auto">{{>footer}}</section>
   </body>
 </html>

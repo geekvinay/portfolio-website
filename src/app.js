@@ -39,3 +39,5 @@ console.log(path.join(__dirname, '../public'));
 app.listen(5000, () => {
   console.log(`Server is up on port ${port}`);
 });
+
+module.exports = app;
