@@ -3,12 +3,29 @@
     <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='/css/home.css' />
     <link rel='stylesheet' href='/css/output.css' />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>Home - Vinay Kishore</title>
   </head>
-  <body class="w-[100vw] min-h-[100vh] bg-slate-200 flex flex-col justify-start">
-    {{>header}}
+  <body class="w-[100vw] min-h-[100vh] flex flex-col justify-start box-border overflow-x-hidden relative">
+    <section class="header sticky top-0">
+      {{>header}}
+    </section>
+
+    <section class="h-[10px] w-[10px] bg-red"></section>
+    {{!-- {{>socialHandles}} --}}
+
+    <section class="hero--section bg-white w-[100vw] px-[50px] py-16 box-border flex flex-col justify-center items-center">
+      <h2 class="text-4xl font-bold text-slate-500 text-center uppercase">Hey, I am</h2>
+      <h1 class="text-[6rem] font-bold text-slate-800  text-center">VINAY KISHORE</h1>
+      <h3 class="text-2xl font-bold text-slate-500 text-center">Student • Web Developer • Tech Enthusiast</h3>
+      <button class="bg-slate-700 text-white text-xl px-6 py-2 my-6 font-semibold">Know more</button>
+    </section>
+
+    <section class="hero--section bg-white w-[100vw] min-h-[100vh] px-[50px] py-10 box-border flex flex-col justify-center items-center">
+      
+    </section>
     
     <section class="mt-auto">{{>footer}}</section>
     <script src='/js/app.js'></script>
