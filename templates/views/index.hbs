@@ -4,17 +4,22 @@
   <meta charset='UTF-8' />
   <meta http-equiv='X-UA-Compatible' content='IE=edge' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <link rel='stylesheet' href='/css/home.css' />
-  <link rel='stylesheet' href='/css/output.css' />
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel='stylesheet' href='/home/css/home.css' />
+  <link rel='stylesheet' href='/home/css/output.css' />
+  <link rel="shortcut icon" href="/media/img/favicon.ico" type="image/x-icon">
   <title>Home - Vinay Kishore</title>
 </head>
 
-<body class="w-[100vw] min-h-[100vh] flex flex-col justify-start box-border overflow-x-hidden relative">
-  <section class="header sticky top-0">
+<body class="w-[100vw] min-h-[100vh] flex flex-col justify-start box-border relative">
+
+  {{!-- ###################################### Header ###################################### --}}
+
+  <section class="header sticky top-0 right-0">
     {{>header}}
   </section>
 
+
+  {{!-- #################################### Hero Section ################################## --}}
   <section
     class="hero--section bg-white w-[100vw] px-[50px] py-16 box-border flex flex-col justify-center items-center">
     <h2 class="text-4xl font-bold text-slate-500 text-center uppercase">Hey, I am</h2>
@@ -23,44 +28,109 @@
     <a class="bg-slate-700 text-white text-xl px-6 py-2 my-6 font-semibold" href="#profile-section">Know more</a>
   </section>
 
+  {{!-- #################################### About Section ################################## --}}
+
   <section class="profile--section bg-white w-[100vw] px-[50px] py-16 box-border" id="profile-section">
-    <img src="/img/profile-photo.webp" alt="" class="">
+    <img src="/media/img/profile-photo.webp" alt="" class="">
     <section class="px-10">
       <p class="text-lg text-slate-800 leading-8">
-        Hey there, I'm <span class="font-bold">VINAY KISHORE,</span> 🥷
+        Hey there, I'm <span class="font-semibold">VINAY KISHORE,</span> 🥷
       </p>
       <p class="text-lg text-slate-800 leading-8">
-        I'm a <span class="font-bold">Computer Science Student</span> and a part time
-        <span class="font-bold">Web Developer.</span>
-        <br> I come from the birth place of <span class="font-bold">Biryani 🌾</span> and the city of Nizams 🤴,
-        <span class="font-bold">Hyderabad, India.</span>
+        I'm a <span class="font-semibold">Computer Science Student</span> and a part time
+        <span class="font-semibold">Web Developer.</span>
+        <br> I come from the birth place of <span class="font-semibold">Biryani 🌾</span> and the city of Nizams 🤴,
+        <span class="font-semibold">Hyderabad, India.</span>
         I seek for learning new technologies ⚙️ and build projects around them which solve real problems and make a
-        difference in the world. I <span class="font-bold">design</span> and
-        <span class="font-bold">develop</span> websites in my free time.
+        difference in the world. I <span class="font-semibold">design</span> and
+        <span class="font-semibold">develop</span> websites in my free time.
       </p>
       <p class="text-lg text-slate-800 leading-8">
-        I also have little experience in <span class="font-bold">designing UI</span>
-        with <span class="font-bold">Figma and Canva</span>
+        I also have little experience in <span class="font-semibold">designing UI</span>
+        with <span class="font-semibold">Figma and Canva</span>
       </p>
       <article class="flex flex-wrap my-3">
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">HTML</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">CSS</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">JavaScript</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">SCSS</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">NodeJs</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">ExpressJs</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">SQL</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">MongoDB</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">Mongoose</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">GIT</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">GitHub</span>
-        <span class="skill-badge font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3">Figma</span>
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">SCSS</span>
+        <span class="skill-badge">NodeJs</span>
+        <span class="skill-badge">ExpressJs</span>
+        <span class="skill-badge">SQL</span>
+        <span class="skill-badge">MongoDB</span>
+        <span class="skill-badge">Mongoose</span>
+        <span class="skill-badge">GIT</span>
+        <span class="skill-badge">GitHub</span>
+        <span class="skill-badge">Figma</span>
       </article>
     </section>
   </section>
 
+  {{!-- #################################### Blog Section ################################## --}}
+
+  <section class="blog--section bg-white w-[100vw] px-[50px] py-16 box-border flex flex-col">
+    <h2 class="text-4xl font-bold text-slate-500 uppercase">Popular writings</h2>
+
+    {{!-- Blog Post --}}
+    <article class="blog--article">
+      <img src="/media/img/blog-placeholder.jpg" alt="">
+      <div class="right--section">
+        <h3 class="blog-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique iste beatae expedita quo quae,
+          corrupti dolorum accusamus in. Recusandae assumenda expedita doloremque saepe quasi excepturi aliquam, odit
+          ratione blanditiis!
+        </h3>
+        <div class="blog-details flex">
+          <p class="date">
+            📅 July 19, 2022
+          </p>
+          <h4 class="sub-heading">
+            📑 JavaScript Series for developers
+          </h4>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, praesentium omnis aspernatur quis officia
+          aliquam, nam cupiditate temporibus inventore accusantium nihil ptate unde necessitatibus aperiam maiores
+          laudantium molestiae, enim totam voluptatem laborum hic consectetur, dolorem quaerat nulla, nesciunt in vero
+          odio ab saepe. Praesentium sapiente blanditiis dolorem, possimus quod esse maxime facilis repudiandae
+          accusantium, non distinctio autem doloribus sunt? Animi eius eligendi odit sunt.
+        </p>
+      </div>
+    </article>
+
+    <article class="blog--article">
+      <img src="/media/img/blog-placeholder.jpg" alt="">
+      <div class="right--section">
+        <h3 class="blog-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique iste beatae expedita quo quae,
+          corrupti dolorum accusamus in. Recusandae assumenda expedita doloremque saepe quasi excepturi aliquam, odit
+          ratione blanditiis!
+        </h3>
+        <div class="blog-details flex">
+          <p class="date">
+            📅 July 19, 2022
+          </p>
+          <h4 class="sub-heading">
+            📑 JavaScript Series for developers
+          </h4>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, praesentium omnis aspernatur quis officia
+          aliquam, nam cupiditate temporibus inventore accusantium nihil ptate unde necessitatibus aperiam maiores
+          laudantium molestiae, enim totam voluptatem laborum hic consectetur, dolorem quaerat nulla, nesciunt in vero
+          odio ab saepe. Praesentium sapiente blanditiis dolorem, possimus quod esse maxime facilis repudiandae
+          accusantium, non distinctio autem doloribus sunt? Animi eius eligendi odit sunt.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  {{!-- ###################################### Footer ###################################### --}}
+
   <section class="mt-auto">{{>footer}}</section>
-  <script src='/js/app.js'></script>
+  <script src='/home/js/app.js'></script>
+
 </body>
 
 </html>
