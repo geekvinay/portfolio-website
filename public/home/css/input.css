@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section.profile--section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    @apply mx-8;    
+}
+
+section.profile--section > span.skill-badge:hover{
+    @apply bg-gray-600 text-white;
+}
+
+article.blog--article{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 200px;
+    gap: 1rem;
+}
+
+h3.blog-heading{
+    @apply text-2xl font-semibold text-slate-700;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50vw;
+    text-overflow: ellipsis;
+}
+
+p.description{
+    @apply text-lg text-slate-600 ;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    background:#fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.blog-details{
+    @apply py-2 font-semibold text-slate-500;
+}
+
+p.date{
+    @apply pr-4;
+}
+
+h4.sub-heading{
+    @apply font-bold;
+}
+
+span.skill-badge{
+    @apply font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3;
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js,hbs",
-    "build:css": "npx tailwind -i ./public/css/input.css -o ./public/css/output.css --watch"
+    "build:css:home": "npx tailwind -i ./public/home/css/input.css -o ./public/home/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
