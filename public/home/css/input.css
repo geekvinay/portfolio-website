@@ -13,7 +13,6 @@ section.profile--section{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    gap: 50px;
     @apply mx-8;    
 }
 
@@ -21,14 +20,34 @@ section.profile--section > span.skill-badge:hover{
     @apply bg-gray-600 text-white;
 }
 
+span.skill-badge{
+    @apply font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3;
+}
+
+/* ############################################################################################# */
+/* ###################################      Components     ##################################### */
+/* ############################################################################################# */
+
+
+/* 1 => Blog Article */
+
 article.blog--article{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 200px;
     gap: 1rem;
+    @apply w-[100%] px-4 py-4 mt-8 border-2 border-gray-300;
 }
 
-h3.blog-heading{
+article.blog--article img{
+    @apply h-[100%] w-[100%] object-cover;
+}
+
+article.blog--article div.right--section{
+    @apply flex flex-col justify-center items-start;
+}
+
+article.blog--article h3.blog-heading{
     @apply text-2xl font-semibold text-slate-700;
     white-space: nowrap;
     overflow: hidden;
@@ -36,7 +55,7 @@ h3.blog-heading{
     text-overflow: ellipsis;
 }
 
-p.description{
+article.blog--article p.description{
     @apply text-lg text-slate-600 ;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -46,18 +65,14 @@ p.description{
     text-overflow: ellipsis;
 }
 
-div.blog-details{
-    @apply py-2 font-semibold text-slate-500;
+article.blog--article div.blog-details{
+    @apply py-2 font-semibold text-slate-500 flex;
 }
 
-p.date{
-    @apply pr-4;
+article.blog--article > p.date{
+    @apply pr-8;
 }
 
-h4.sub-heading{
+article.blog--article > h4.sub-heading{
     @apply font-bold;
-}
-
-span.skill-badge{
-    @apply font-semibold border-2 border-gray-600 py-1 px-3 my-1 mr-3;
 }

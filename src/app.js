@@ -21,6 +21,22 @@ app.get('', (req, res) => {
   res.render('index', {});
 });
 
+app.get('/about', (req, res) => {
+  res.render('development', {});
+});
+
+app.get('/works', (req, res) => {
+  res.render('development', {});
+});
+
+app.get('/blogs', (req, res) => {
+  res.render('development', {});
+});
+
+app.get('/contact', (req, res) => {
+  res.render('development', {});
+});
+
 app.get('/comp', (req, res) => {
   res.render('com', {});
 });
