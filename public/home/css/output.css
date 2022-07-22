@@ -589,6 +589,16 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mr-auto {
   margin-right: auto;
 }
@@ -736,6 +746,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pr-\[50px\] {
   padding-right: 50px;
 }
@@ -750,6 +765,11 @@ video {
 
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-base {
@@ -773,11 +793,6 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -895,6 +910,44 @@ span.skill-badge {
 
 /* ############################################################################################# */
 
+/* ###################################      Buttons        ##################################### */
+
+/* ############################################################################################# */
+
+div.btn--wrapper {
+  width: 100%;
+  padding-top: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+a.btn--primary{
+  text-align: center;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+a.btn--primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  transition: all ease-in-out 300ms;
+}
+
+/* ############################################################################################# */
+
 /* ###################################      Components     ##################################### */
 
 /* ############################################################################################# */
@@ -972,3 +1025,87 @@ article.blog--article > p.date {
 article.blog--article > h4.sub-heading {
   font-weight: 700;
 }
+
+/* 1 => Project Article */
+
+section.project--section{
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+section.project--wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+article.project--item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+article.project--item img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+article.project--item h3.project--heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40vw;
+  text-overflow: ellipsis;
+}
+
+article.project--item p.description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  background:#fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article.project--item div.project--details {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+article.project--item > p.date {
+  padding-right: 2rem;
+}
+
